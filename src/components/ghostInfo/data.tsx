@@ -16,7 +16,7 @@ const ghostInfo: IghostInfo[] = [
 			"Spirits can't hunt for 180 seconds after being smudged, while most ghost can hunt after 90 seconds.",
 		],
 		strategies: [
-			'Best way to be sure it is a Spirit is by lowering your sanity enough so the ghost will hunt frequently, then you use a smudge stick on the ghost (it can be during a hunt or not, but be sure the ghost was smudged), and check if it will take more than 3 minutes to hunt, you can also use a timer to be sure (for what I know the timer starts exactly when the ghost was smudged, but I am not sure on this information).',
+			'Lower your sanity enough so the ghost will hunt frequently, then use a smudge stick on the ghost (it can be during a hunt or not, but be sure the ghost was smudged), and check if it will take more than 3 minutes to hunt, you can also use a timer to be sure (for what I know the timer starts exactly when the ghost was smudged).',
 		],
 		evidence: ['EMF 5', 'Spirit Box', 'Writing'],
 	},
@@ -70,7 +70,7 @@ const ghostInfo: IghostInfo[] = [
 		speed: '1.6m/s (normal)',
 		//check info
 		behaviour: [
-			'Banshee chooses a target at the beginning of the round (if you are playing alone the target will always be you, of course).',
+			'Banshee chooses a random target at the beginning of the round (if you are playing alone the target will always be you, of course).',
 			'If the target dies Banshee will choose a new target.',
 			'This ghost hunts based on the sanity of the target, not the average team sanity like every other ghost.',
 			'If the target is inside the house during a hunt, Banshee will not kill anyone that is not the target, other player can walk through the ghost and will not get killed.',
@@ -115,7 +115,7 @@ const ghostInfo: IghostInfo[] = [
 			'Can hunt earlier if the lights are off, and hunt later if lights are on.',
 			'Will never turn a light on.',
 			'More likely to explode lights.',
-			'Can immediately turn the off a light after you turn it on.',
+			'Can immediately turn off a light after you turn it on.',
 		],
 		strategies: [
 			'Turn the lights on in the ghost room on and put a crucifix in there, if the ghost hunts with the lighst on is not likely it is a Mare, but it is still possible. Also be careful if it is a Mare it may cause the ghost to roam from the room and start a hunt elsewhere.',
@@ -126,7 +126,7 @@ const ghostInfo: IghostInfo[] = [
 	{
 		name: 'Revenant',
 		hunt: '50% (normal)',
-		speed: '1.1m/s if not chasing (extremely slow) / 3.0m/s when chasing (extremely fast)',
+		speed: '1.1m/s if not chasing (very slow) / 3.0m/s when chasing (very fast)',
 		behaviour: [
 			'Extremely slow when not chasing someone.',
 			'Extremely fast when chasing someone.',
@@ -225,14 +225,26 @@ const ghostInfo: IghostInfo[] = [
 			"Can't turn on the breaker.",
 			'More likely to turn off the breaker.',
 			'It can make you blow freezing breath outside the ghost room during a hunt.',
-			'Always has Freezing Temperature on Nightmare of Insane mode.',
+			'Always has Freezing Temperature on Nightmare or Insane mode.',
 		],
 		strategies: [
-			"If the breaker is on and the ghost is fast on its room, but slows down when out of it, it's a Hantu.",
+			"If the breaker is on and the ghost is fast in its room, but slows down when out of it, it's a Hantu.",
 			"During a hunt you can get in line of sight of the ghost and let it chase you, if the ghost does not speed up when chasing, it's a Hantu.",
 			"Let's say the breaker is on and you notice the ghost is kinda slow, but you weren't able to hear it inside the ghost room or it didn't spawn in the ghost room. You can turn off the breaker and see if the ghost will be fast now.",
 		],
 		evidence: ['Fingerprints', 'Orbs', '*Freezing'],
+	},
+	{
+		name: 'Goryo',
+		hunt: '50% (normal)',
+		speed: '1.6m/s (normal)',
+		behaviour: [
+			'Cannot perform a long roam, but can still roam.',
+			'Only shows D.O.T.S on camera.',
+			'Always has D.O.T.S on Nightmare or Insane mode.',
+		],
+		strategies: ['If you only D.O.T.S on camera, it might be a Goryo.'],
+		evidence: ['EMF 5', 'Fingerprints', '*D.O.T.S'],
 	},
 ];
 

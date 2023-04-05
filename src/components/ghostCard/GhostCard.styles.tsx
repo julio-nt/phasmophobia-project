@@ -6,6 +6,10 @@ const mainContainer = styled(Box)(({ theme }) => ({
 	paddingLeft: '4rem',
 	paddingRight: '4rem',
 	paddingBottom: '2rem',
+	[theme.breakpoints.down('md')]: {
+		paddingLeft: '2rem',
+		paddingRight: '2rem',
+	},
 }));
 
 const cardListContainer = styled(Box)(({ theme }) => ({

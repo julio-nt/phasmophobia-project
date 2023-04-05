@@ -5,4 +5,6 @@ const navbar = styled(AppBar)(({ theme }) => ({
 	backgroundColor: '#1f1f1f',
 }));
 
-export { navbar };
+const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
+
+export { navbar, Offset };

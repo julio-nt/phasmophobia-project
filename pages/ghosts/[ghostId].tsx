@@ -1,12 +1,13 @@
 import { useRouter } from 'next/router';
 import { Box, Typography } from '@mui/material';
-import { ghostCard } from '@/src/components/ghostCard/data';
+// import { ghostCard } from '@/src/components/ghostCard/data';
+import { ghostInfo } from '@/src/components/ghostInfo/data';
 import Head from 'next/head';
+import GhostInfo from '@/src/components/ghostInfo/GhostInfo';
 
 export default function Ghost() {
 	const router = useRouter();
 	const ghostId = router.query.ghostId;
-	const myGhost = ghostCard.find(card => card.name === ghostId);
 
 	return (
 		<Box>
@@ -14,10 +15,7 @@ export default function Ghost() {
 				<title>{ghostId} - Phasmophobia</title>
 				<meta name='description' content='Ghost Info - Phasmophobia' />
 			</Head>
-			<Typography variant='h5'>
-				This is the {myGhost?.name} page
-			</Typography>
-			<Typography>{myGhost?.evidence}</Typography>
+			<GhostInfo ghost={ghostId} />
 		</Box>
 	);
 }
