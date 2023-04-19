@@ -139,7 +139,7 @@ const ghostInfo: IghostInfo[] = [
 	{
 		name: 'Shade',
 		hunt: '35%',
-		speed: '1.6m/s (normal)',
+		speed: '1.6m/s (late)',
 		behaviour: [
 			"Won't interact much in the ghost room if someone is there.",
 			'Shade will never start a hunt in the same room as a player.',

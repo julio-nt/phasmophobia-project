@@ -12,6 +12,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import * as Layout from './NavBar.styles';
 import { pages } from './data';
 import Link from 'next/link';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function NavBar() {
 	const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -94,7 +95,7 @@ export default function NavBar() {
 								}}
 							>
 								{pages.map(page => (
-									<Link href={page.link}>
+									<Link href={page.link} key={uuidv4()}>
 										<MenuItem
 											key={page.name}
 											onClick={handleCloseNavMenu}
@@ -132,7 +133,7 @@ export default function NavBar() {
 							}}
 						>
 							{pages.map(page => (
-								<Link href={page.link}>
+								<Link href={page.link} key={uuidv4()}>
 									<Button
 										key={page.name}
 										onClick={handleCloseNavMenu}
