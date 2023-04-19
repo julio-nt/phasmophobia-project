@@ -13,6 +13,11 @@ export default function Filter({
 	filter: string;
 	setFilter: any;
 }) {
+	interface Ioption {
+		label: string;
+		value: string;
+	}
+
 	return (
 		<FormControl
 			sx={{ m: 1, minWidth: 120 }}
@@ -32,7 +37,7 @@ export default function Filter({
 				<MenuItem value='All'>
 					<em>All</em>
 				</MenuItem>
-				{data.options.map(item => {
+				{data.options.map((item: Ioption) => {
 					return <MenuItem value={item.value}>{item.label}</MenuItem>;
 				})}
 			</Select>
