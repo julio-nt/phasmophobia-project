@@ -12,6 +12,8 @@ export default function HomePage() {
 				sx={{
 					textAlign: 'center',
 					marginTop: '2rem',
+					paddingLeft: '1rem',
+					paddingRight: '1rem',
 				}}
 			>
 				<Typography variant='h3'>

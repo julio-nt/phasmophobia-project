@@ -20,6 +20,10 @@ const pages: IPages[] = [
 		name: 'Maps',
 		link: '/maps',
 	},
+	{
+		name: 'Hunt',
+		link: '/hunt',
+	},
 ];
 
 export { pages };

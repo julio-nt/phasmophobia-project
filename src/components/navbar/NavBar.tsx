@@ -57,7 +57,7 @@ export default function NavBar() {
 								textDecoration: 'none',
 							}}
 						>
-							PhasmoGameInfo
+							Phas-Project
 						</Typography>
 
 						<Box
@@ -112,7 +112,7 @@ export default function NavBar() {
 							variant='h5'
 							noWrap
 							component='a'
-							href=''
+							href='/'
 							sx={{
 								mr: 2,
 								display: { xs: 'flex', md: 'none' },
@@ -124,12 +124,13 @@ export default function NavBar() {
 								textDecoration: 'none',
 							}}
 						>
-							PhasmoGameInfo
+							Phas-Project
 						</Typography>
 						<Box
 							sx={{
 								flexGrow: 1,
 								display: { xs: 'none', md: 'flex' },
+								gap: '2rem',
 							}}
 						>
 							{pages.map(page => (
@@ -141,6 +142,8 @@ export default function NavBar() {
 											my: 2,
 											color: 'white',
 											display: 'block',
+											borderLeft: '1px solid #610000',
+											borderBottom: '1px solid #610000',
 										}}
 									>
 										{page.name}

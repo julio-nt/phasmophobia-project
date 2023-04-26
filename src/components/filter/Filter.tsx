@@ -26,7 +26,9 @@ export default function Filter({
 				backgroundColor: 'white',
 			}}
 		>
-			<InputLabel id={data.id}>{data.label}</InputLabel>
+			<InputLabel id={data.id} sx={{ color: '#ff4545' }}>
+				{data.label}
+			</InputLabel>
 			<Select
 				labelId={data.id}
 				id={data.id}
