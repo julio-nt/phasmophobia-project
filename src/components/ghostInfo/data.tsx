@@ -13,10 +13,10 @@ const ghostInfo: IghostInfo[] = [
 		hunt: '50% (normal)',
 		speed: '1.6m/s (normal)',
 		behaviour: [
-			"Spirits can't hunt for 180 seconds after being smudged, while most ghost can hunt after 90 seconds.",
+			"Spirits can't hunt for 3 minutes after being smudged, while all other ghosts (except Demon) can't hunt for 1:30 minutes.",
 		],
 		strategies: [
-			'Lower your sanity enough so the ghost will hunt frequently, then use a smudge stick on the ghost (it can be during a hunt or not, but be sure the ghost was smudged), and check if it will take more than 3 minutes to hunt, you can also use a timer to be sure (for what I know the timer starts exactly when the ghost was smudged).',
+			'Lower your sanity enough so the ghost will hunt frequently, then use a smudge stick on the ghost (it can be during a hunt or not, but be sure the ghost was hit with the smudge), check if it will take less than 3 minutes to hunt, you can also use a timer to be sure (for what I know the timer starts exactly when the ghost was smudged, but if it was during a hunt, some say it is when the hunt ends).',
 		],
 		evidence: ['EMF 5', 'Spirit Box', 'Writing'],
 	},
@@ -240,11 +240,55 @@ const ghostInfo: IghostInfo[] = [
 		speed: '1.6m/s (normal)',
 		behaviour: [
 			'Cannot perform a long roam, but can still roam.',
+			"Cannot change ghost room (unsure if it's impossible or unlikely)",
 			'Only shows D.O.T.S on camera.',
 			'Always has D.O.T.S on Nightmare or Insane mode.',
 		],
-		strategies: ['If you only D.O.T.S on camera, it might be a Goryo.'],
+		strategies: [
+			'If you only see D.O.T.S on camera, it might be a Goryo.',
+			'WARNING: D.O.T.S is one of the most anoying evindences to get, so be patience.',
+			"Goryo won't change ghost room and won't roam too often, it also won't roam too far from its ghost room",
+		],
 		evidence: ['EMF 5', 'Fingerprints', '*D.O.T.S'],
+	},
+	{
+		name: 'Myling',
+		hunt: '50% (normal)',
+		speed: '1.6m/s (normal)',
+		behaviour: [
+			'More likely to make noises on the Parabolic Microphone.',
+			'During a hunt it is really quiet',
+		],
+		strategies: [
+			'Listen closely to the sound the ghost makes during the hunt (footsteps and voice), it will be lower than other ghosts.',
+			'Another way to tell is by dropping a flashligh turned on in your hiding spot and pay attention if you can only hear the footsteps when the flashligh is flashing. With other ghosts you will be able to hear the footsteps first.',
+		],
+		evidence: ['EMF 5', 'Fingerprints', 'Writing'],
+	},
+	{
+		name: 'Onryo',
+		hunt: '50% (normal)',
+		speed: '1.6m/s (normal)',
+		behaviour: [
+			"WARNING: Onryo is the most polemic ghost because of its confusing abilities, there's been many discussions about how it actually works, so I'll share what I know, but please remember that some of it might not be 100% correct. I'll put a warning on those cases.",
+			'More likely to blow out candles.',
+			"Candles work just like a crucifix for Onryo, but with a range of 5 meters instead of 3, so Onryon can't hunt close to a candle, it will blow it instead.",
+			'After 3 candles have been blown out, each consecutive blown out candle has a 50% chance to start a hunt regardeless of the average sanity.',
+			"WARNING: It's been said that the above ability works like this: Onryo has a candle counter, when it blows 3 candles it has 100% chance of hunting, and then the counter resets and repeats (I don't confirm that because I was never able to test it, but a lot of people told me they tested it and it indeed works like that).",
+			'When it uses its ability to hunt after a blown candle it is not actually immediatly after blowing it, it takes around 4 seconds to hunt.',
+			"Onryo can hunt at any% sanity if it uses its ability to hunt after blowing candles, it's actually pretty common for Onryo to hunt as soon as you open the door on Sunny Meadows if the ghost room is on the chapel because it can blow the candles that are spawned there.",
+			'Each dead player increases the chance of hunting after blowing out candles by 25%, that means if 2 players are dead the chance of a hunt is 100% after a blown out candle.',
+			"WARNING: It's been said that after a player dies it decreases the timer to hunt after a blown candle, so if at first it was 4 seconds, it will be 3 after one player dies.",
+			"It's been said that Onryo is the only ghost that can blow more than 1 candles at the same time.",
+			'It happened to me a lot that if I never let the candles on the ghost room goes out, it will roam to another room and attempt hunting from there.',
+		],
+		strategies: [
+			'WARNING: In addition to being confusing in the abilities, the strategies are also a little complicated.',
+			"WARNING: This is really important regarding Onryo tests: Since Onryo uses candles as crucifixes, if there's more than 1 candle nearby it may be hard to notice its abilities.",
+			"The most common strategy is to set up a candle on top of a crucifix, it is impossible for the Onryo to burn the crucifix if there is a lit candle on top of it, so if it uses the crucifix and the candle is lit, it's 100% not an Onryo.",
+			"Check if the ghost is more likely to hunt (or attempt a hunt) after blowing candles, BUT remember that Onryo takes a few seconds to attempt hunt after blowing the candle, so don't instantly light it after being blown.",
+		],
+		evidence: ['Spirit Box', 'Orbs', 'Freezing'],
 	},
 ];
 

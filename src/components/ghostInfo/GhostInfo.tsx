@@ -47,7 +47,7 @@ export default function GhostInfo(props: any) {
 					}}
 				>
 					<Layout.sectionTitles id='hunt'>
-						<b>Hunt possibility:</b> {currentGhost?.hunt}
+						<b>Hunt possible at:</b> {currentGhost?.hunt} sanity
 					</Layout.sectionTitles>
 					<Layout.sectionTitles id='speed'>
 						<b>Speed:</b> {currentGhost?.speed}
@@ -56,10 +56,24 @@ export default function GhostInfo(props: any) {
 						<b>Behaviour | Abilities</b>
 					</Layout.sectionTitles>
 					<Layout.cardBox>
-						{currentGhost?.behaviour.map(item => {
+						{currentGhost?.behaviour.map((item, i) => {
 							return (
 								<Layout.card elevation={3}>
-									<Layout.cardText>{item}</Layout.cardText>
+									{item.includes('WARNING') ? (
+										<Layout.cardText>
+											<span style={{ fontWeight: '900' }}>
+												{i + 1} -
+											</span>
+											<b> {item}</b>
+										</Layout.cardText>
+									) : (
+										<Layout.cardText>
+											<span style={{ fontWeight: '900' }}>
+												{i + 1} -
+											</span>{' '}
+											{item}
+										</Layout.cardText>
+									)}
 								</Layout.card>
 							);
 						})}
@@ -68,15 +82,21 @@ export default function GhostInfo(props: any) {
 						<b>Strategies</b>
 					</Layout.sectionTitles>
 					<Layout.cardBox>
-						{currentGhost?.strategies.map(item => {
+						{currentGhost?.strategies.map((item, i) => {
 							return (
 								<Layout.card elevation={3}>
 									{item.includes('WARNING') ? (
 										<Layout.cardText>
-											<b>{item}</b>
+											<span style={{ fontWeight: '900' }}>
+												{i + 1} -
+											</span>
+											<b> {item}</b>
 										</Layout.cardText>
 									) : (
 										<Layout.cardText>
+											<span style={{ fontWeight: '900' }}>
+												{i + 1} -
+											</span>
 											{item}
 										</Layout.cardText>
 									)}
@@ -99,7 +119,11 @@ export default function GhostInfo(props: any) {
 				<Backdrop open={open} />
 				<SpeedDial
 					ariaLabel='SpeedDial tooltip example'
-					sx={{ position: 'fixed', bottom: 16, right: 16 }}
+					sx={{
+						position: 'fixed',
+						bottom: 16,
+						right: 16,
+					}}
 					icon={<SpeedDialIcon />}
 					onClose={handleClose}
 					onOpen={handleOpen}

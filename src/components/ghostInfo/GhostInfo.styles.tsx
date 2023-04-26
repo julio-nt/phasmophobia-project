@@ -20,7 +20,7 @@ const title = styled(Typography)(({ theme }) => ({
 
 const sectionTitles = styled(Typography)(({ theme }) => ({
 	paddingTop: '2rem',
-	color: 'white',
+	color: '#a6a6a6',
 	variant: 'h2',
 }));
 
@@ -40,9 +40,10 @@ const card = styled(Paper)(({ theme }) => ({
 }));
 
 const cardText = styled(Typography)(({ theme }) => ({
-	background: 'linear-gradient(to right bottom, #ffd4d4, #ffffff)',
-	backgroundClip: 'text',
-	WebkitTextFillColor: 'transparent',
+	// background: 'linear-gradient(to right bottom, #ffd4d4, #666666)',
+	// backgroundClip: 'text',
+	// WebkitTextFillColor: 'transparent',
+	color: '#a6a6a6',
 }));
 
 export { mainSection, title, sectionTitles, cardBox, card, cardText };
