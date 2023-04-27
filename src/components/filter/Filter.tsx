@@ -3,6 +3,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
+import * as Layout from './Filter.styles';
 
 export default function Filter({
 	data,
@@ -19,17 +20,9 @@ export default function Filter({
 	}
 
 	return (
-		<FormControl
-			sx={{ m: 1, minWidth: 120 }}
-			size='small'
-			style={{
-				backgroundColor: 'white',
-			}}
-		>
-			<InputLabel id={data.id} sx={{ color: '#ff4545' }}>
-				{data.label}
-			</InputLabel>
-			<Select
+		<FormControl sx={{ m: 1, minWidth: 120 }} size='small'>
+			<InputLabel id={data.id}>{data.label}</InputLabel>
+			<Layout.select
 				labelId={data.id}
 				id={data.id}
 				value={filter}
@@ -42,7 +35,7 @@ export default function Filter({
 				{data.options.map((item: Ioption) => {
 					return <MenuItem value={item.value}>{item.label}</MenuItem>;
 				})}
-			</Select>
+			</Layout.select>
 		</FormControl>
 	);
 }

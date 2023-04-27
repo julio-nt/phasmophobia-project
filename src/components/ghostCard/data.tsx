@@ -147,7 +147,8 @@ const ghostCard: IGhostCard[] = [
 	},
 	{
 		name: 'Obake',
-		shortInfo: 'This Ghost has 6 fingers and can change its appearence.',
+		shortInfo:
+			'Probably the most loved ghost by the community, this ghost has 6 fingers and may be gender fluid.',
 		evidence: ['EMF 5 - ', '*Fingerprints - ', 'Orbs'],
 		speed: 'normal',
 		hunt: 'normal',

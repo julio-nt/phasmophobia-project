@@ -32,6 +32,7 @@ const evidence = styled(Typography)(({ theme }) => ({
 	background: '-webkit-linear-gradient(#828282, #e30f00)',
 	backgroundClip: 'text',
 	WebkitTextFillColor: 'transparent',
+	letterSpacing: '1px',
 }));
 
 const cardButton = styled(Button)(({ theme }) => ({
@@ -39,8 +40,11 @@ const cardButton = styled(Button)(({ theme }) => ({
 	// marginRight: 'auto',
 	position: 'absolute',
 	top: '80%',
-	left: '30%',
+	left: '28%',
 	background: '-webkit-linear-gradient(#828282, #e30f00)',
+	color: 'black',
+	fontWeight: 'bold',
+	letterSpacing: '2px',
 	// backgroundClip: 'text',
 	// WebkitTextFillColor: 'transparent',
 }));

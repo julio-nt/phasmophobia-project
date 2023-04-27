@@ -47,7 +47,7 @@ export default function GhostInfo(props: any) {
 					}}
 				>
 					<Layout.sectionTitles id='hunt'>
-						<b>Hunt possible at:</b> {currentGhost?.hunt} sanity
+						<b>Hunt possible at:</b> {currentGhost?.hunt}
 					</Layout.sectionTitles>
 					<Layout.sectionTitles id='speed'>
 						<b>Speed:</b> {currentGhost?.speed}

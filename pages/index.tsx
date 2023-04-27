@@ -5,8 +5,11 @@ export default function HomePage() {
 	return (
 		<>
 			<Head>
-				<title>Phasmophobia Game Info</title>
-				<meta name='description' content='Phasmophobia Game Info' />
+				<title>Phasmophobia Project</title>
+				<meta
+					name='description'
+					content='You will become a pro in the game Phasmophobia'
+				/>
 			</Head>
 			<Box
 				sx={{
