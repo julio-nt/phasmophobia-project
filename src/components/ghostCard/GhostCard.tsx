@@ -15,7 +15,7 @@ export default function GhostCard() {
 		options: [
 			{
 				label: 'Very Slow',
-				value: 'very slow',
+				value: 'verySlow',
 			},
 			{
 				label: 'Slow',
@@ -31,7 +31,7 @@ export default function GhostCard() {
 			},
 			{
 				label: 'Very Fast',
-				value: 'very fast',
+				value: 'veryFast',
 			},
 			{
 				label: 'Varies',
@@ -68,11 +68,16 @@ export default function GhostCard() {
 			<Filter data={huntData} filter={hunt} setFilter={setHunt} />
 			<Box sx={{ display: 'flex', justifyContent: 'center' }}>
 				<Layout.cardListContainer>
-					{speed != 'All'
+					{speed != 'All' || hunt != 'All'
 						? ghostCard
-								.filter(ghost => ghost.speed.includes(speed))
+								.filter(
+									ghost =>
+										ghost.speed.includes(speed) &&
+										ghost.hunt.includes(hunt)
+								)
 								.map(ghost => {
-									ghost.speed.includes(speed);
+									ghost.speed.includes(speed) &&
+										ghost.hunt.includes(hunt);
 									return (
 										<Layout.cardContainer
 											sx={{ minWidth: 275 }}

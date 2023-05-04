@@ -21,7 +21,9 @@ export default function Filter({
 
 	return (
 		<FormControl sx={{ m: 1, minWidth: 120 }} size='small'>
-			<InputLabel id={data.id}>{data.label}</InputLabel>
+			<InputLabel id={data.id} sx={{ color: 'lightGray' }}>
+				{data.label}
+			</InputLabel>
 			<Layout.select
 				labelId={data.id}
 				id={data.id}

@@ -1,7 +1,5 @@
 import { useRouter } from 'next/router';
-import { Box, Typography } from '@mui/material';
-// import { ghostCard } from '@/src/components/ghostCard/data';
-import { ghostInfo } from '@/src/components/ghostInfo/data';
+import { Box } from '@mui/material';
 import Head from 'next/head';
 import GhostInfo from '@/src/components/ghostInfo/GhostInfo';
 

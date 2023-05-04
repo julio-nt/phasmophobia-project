@@ -14,7 +14,7 @@ export default function HomePage() {
 			<Box
 				sx={{
 					textAlign: 'center',
-					marginTop: '2rem',
+					paddingTop: '2rem',
 					paddingLeft: '1rem',
 					paddingRight: '1rem',
 				}}

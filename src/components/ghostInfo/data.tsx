@@ -83,7 +83,7 @@ const ghostInfo: IghostInfo[] = [
 			'If you are far from the ghost room and notice the ghost interacted close to you it might be because you are the target and it teleported to you.',
 			'WARNING: THE FOLLOWING STRATEGIES CAN ONLY BE DONE IF PLAYING WITH OTHER PEOPLE!',
 			"If you think you got an early hunt you should check the sanity monitor in the truck, if the average team sanity is above 50%, but one player is lower than 50% it is possible it's a Banshee and that player is the target.",
-			'A dangerous way to test for Banshee is to have every player inside the house, everybody hide except for one player that will test it, this player will try to attract the ghost, see if it follows the player, preferably try to loop it a little to be sure, sometimes the ghost will go in your direction because it is looking for the actual target, not because it is chasing you. If the ghost does chase you, then you try again the same thing with another player testing it, if the ghost chase both player then its not a Banshee.',
+			"A dangerous way to test for Banshee is to have all the players inside the house, everybody hide except for one player that will test it, this player will try to attract the ghost, see if it follows the player, preferably try to loop it a little to be sure, sometimes the ghost will go to your direction randomly, not because it is chasing you, you can also pay attention to the ghost speed, if it increases when it sees you is because it is chasing you. If the ghost does chase you, then you try again the same thing with another player testing it, if the ghost chases both players then its not a Banshee (note that everyone needs to be inside for this to work properly, if the actual target isn't inside the house the Banshee will hunt normaly).",
 		],
 		evidence: ['Fingerprints', 'Orbs', 'D.O.T.S'],
 	},
@@ -410,7 +410,10 @@ const ghostInfo: IghostInfo[] = [
 			'Can age up to 10 times.',
 			'When asking the Ouija Board their age, the response will change as the Thaye ages, so remember to say happy birthday.',
 		],
-		strategies: [],
+		strategies: [
+			'If you get the Ouija Board you can ask the ghost their age, it costs very little sanity and then you can ask it later in game to see if it changed. Thaye age will change when you stay in the ghost room.',
+			'Pay attetion to the ghost speed on the first hunt, Thaye will probably be really fast and hunt earlier, but this may change if you found the ghost room pretty soon and stayed there for some time, then spend some time in the ghost room and check if it will be slower.',
+		],
 		evidence: ['Orbs', 'Writing', 'D.O.T.S'],
 	},
 ];

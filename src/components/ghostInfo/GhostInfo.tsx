@@ -38,7 +38,7 @@ export default function GhostInfo(props: any) {
 	return (
 		<>
 			<Layout.mainSection>
-				<Layout.title variant='h4' sx={{}}>
+				<Layout.title variant='h4' id='hunt'>
 					<b>{currentGhost?.name}</b>
 				</Layout.title>
 				<Box
@@ -46,13 +46,13 @@ export default function GhostInfo(props: any) {
 						paddingLeft: '1rem',
 					}}
 				>
-					<Layout.sectionTitles id='hunt'>
+					<Layout.sectionTitles id='speed'>
 						<b>Hunt possible at:</b> {currentGhost?.hunt}
 					</Layout.sectionTitles>
-					<Layout.sectionTitles id='speed'>
+					<Layout.sectionTitles id='behaviour'>
 						<b>Speed:</b> {currentGhost?.speed}
 					</Layout.sectionTitles>
-					<Layout.sectionTitles id='behaviour'>
+					<Layout.sectionTitles>
 						<b>Behaviour | Abilities</b>
 					</Layout.sectionTitles>
 					<Layout.cardBox>
@@ -128,6 +128,14 @@ export default function GhostInfo(props: any) {
 					onClose={handleClose}
 					onOpen={handleOpen}
 					open={open}
+					FabProps={{
+						sx: {
+							bgcolor: 'red',
+							'&:hover': {
+								bgcolor: 'red',
+							},
+						},
+					}}
 				>
 					{actions.map(action => (
 						<SpeedDialAction

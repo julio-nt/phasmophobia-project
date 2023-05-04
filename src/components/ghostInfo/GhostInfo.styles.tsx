@@ -28,6 +28,7 @@ const cardBox = styled(Box)(({ theme }) => ({
 	display: 'flex',
 	flexWrap: 'wrap',
 	gap: '1rem',
+	flexDirection: 'column',
 }));
 
 const card = styled(Paper)(({ theme }) => ({
