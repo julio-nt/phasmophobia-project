@@ -16,11 +16,12 @@ const cardListContainer = styled(Box)(({ theme }) => ({
 	display: 'flex',
 	flexWrap: 'wrap',
 	gap: '1rem',
+	justifyContent: 'space-between',
 }));
 
 const cardContainer = styled(Card)(({ theme }) => ({
 	width: '12.5rem',
-	height: '14rem',
+	height: '12rem',
 	position: 'relative',
 	backgroundColor: '#2b2b2b',
 	color: '#707070',
@@ -49,10 +50,17 @@ const cardButton = styled(Button)(({ theme }) => ({
 	// WebkitTextFillColor: 'transparent',
 }));
 
+const filterContainer = styled(Box)(({ theme }) => ({
+	display: 'flex',
+	flexWrap: 'wrap',
+	justifyContent: 'flex-end',
+}));
+
 export {
 	mainContainer,
 	cardListContainer,
 	cardContainer,
 	evidence,
 	cardButton,
+	filterContainer,
 };

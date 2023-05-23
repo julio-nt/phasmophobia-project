@@ -9,6 +9,9 @@ export default function EquipmentsInfo(props: any) {
 	return (
 		<Layout.mainSection>
 			<Typography variant='h4'>{currentEquip?.name}</Typography>
+			{currentEquip?.basicInfo.map((item, i) => {
+				return <Typography>{item}</Typography>;
+			})}
 		</Layout.mainSection>
 	);
 }

@@ -16,12 +16,14 @@ const title = styled(Typography)(({ theme }) => ({
 	background: 'linear-gradient(to bottom, #9b1f1f, #540101)',
 	backgroundClip: 'text',
 	WebkitTextFillColor: 'transparent',
+	fontSize: '3rem',
 }));
 
 const sectionTitles = styled(Typography)(({ theme }) => ({
 	paddingTop: '2rem',
 	color: '#a6a6a6',
 	variant: 'h2',
+	fontSize: '1.3rem',
 }));
 
 const cardBox = styled(Box)(({ theme }) => ({

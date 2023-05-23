@@ -64,8 +64,10 @@ export default function GhostCard() {
 
 	return (
 		<Layout.mainContainer>
-			<Filter data={speedData} filter={speed} setFilter={setSpeed} />
-			<Filter data={huntData} filter={hunt} setFilter={setHunt} />
+			<Layout.filterContainer>
+				<Filter data={speedData} filter={speed} setFilter={setSpeed} />
+				<Filter data={huntData} filter={hunt} setFilter={setHunt} />
+			</Layout.filterContainer>
 			<Box sx={{ display: 'flex', justifyContent: 'center' }}>
 				<Layout.cardListContainer>
 					{speed != 'All' || hunt != 'All'
@@ -75,11 +77,12 @@ export default function GhostCard() {
 										ghost.speed.includes(speed) &&
 										ghost.hunt.includes(hunt)
 								)
-								.map(ghost => {
+								.map((ghost, i) => {
 									ghost.speed.includes(speed) &&
 										ghost.hunt.includes(hunt);
 									return (
 										<Layout.cardContainer
+											key={i}
 											sx={{ minWidth: 275 }}
 										>
 											<CardContent>
@@ -92,9 +95,9 @@ export default function GhostCard() {
 												<Typography variant='body1'>
 													{ghost.shortInfo}
 												</Typography>
-												<Layout.evidence variant='body2'>
+												{/* <Layout.evidence variant='body2'>
 													{ghost.evidence}
-												</Layout.evidence>
+												</Layout.evidence> */}
 											</CardContent>
 											<CardActions>
 												<Link
@@ -112,9 +115,10 @@ export default function GhostCard() {
 										</Layout.cardContainer>
 									);
 								})
-						: ghostCard.map(ghost => {
+						: ghostCard.map((ghost, i) => {
 								return (
 									<Layout.cardContainer
+										key={i}
 										sx={{ minWidth: 275 }}
 									>
 										<CardContent>
@@ -127,9 +131,9 @@ export default function GhostCard() {
 											<Typography variant='body1'>
 												{ghost.shortInfo}
 											</Typography>
-											<Layout.evidence variant='body2'>
+											{/* <Layout.evidence variant='body2'>
 												{ghost.evidence}
-											</Layout.evidence>
+											</Layout.evidence> */}
 										</CardContent>
 										<CardActions>
 											<Link

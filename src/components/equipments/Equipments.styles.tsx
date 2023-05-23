@@ -32,6 +32,8 @@ const equipSections = styled(Box)(({ theme }) => ({
 	display: 'flex',
 	flexDirection: 'column',
 	gap: '1rem',
+	maxHeight: '620px',
+	flexWrap: 'wrap',
 }));
 
 const equipTitles = styled(Typography)(({ theme }) => ({
@@ -49,7 +51,7 @@ const equipNames = styled(Link)(({ theme }) => ({
 	padding: '5px',
 	borderRadius: '10px 2px 2px 10px',
 	width: '15rem',
-	background: 'linear-gradient(to left, black 30%, #e30f00 50%) right',
+	background: 'linear-gradient(to left, black 10%, #e30f00 50%) right',
 	backgroundSize: '200%',
 	transition: '.8s ease-out',
 	// marginBottom: '2rem',

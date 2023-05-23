@@ -4,10 +4,10 @@ interface IPages {
 }
 
 const pages: IPages[] = [
-	{
-		name: 'Ghosts',
-		link: '/ghosts',
-	},
+	// {
+	// 	name: 'Ghosts',
+	// 	link: '/ghosts',
+	// },
 	{
 		name: 'Equipment',
 		link: '/equipment',
