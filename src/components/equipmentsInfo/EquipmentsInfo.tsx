@@ -8,9 +8,14 @@ export default function EquipmentsInfo(props: any) {
 	);
 	return (
 		<Layout.mainSection>
-			<Typography variant='h4'>{currentEquip?.name}</Typography>
+			<Typography variant='h3'>{currentEquip?.name}</Typography>
+			<Layout.sectionTitles variant='h5'>Basic Info</Layout.sectionTitles>
 			{currentEquip?.basicInfo.map((item, i) => {
-				return <Typography>{item}</Typography>;
+				return <Layout.text>{item}</Layout.text>;
+			})}
+			<Layout.sectionTitles variant='h5'>Tips</Layout.sectionTitles>
+			{currentEquip?.tips.map((item, i) => {
+				return <Layout.text>{item}</Layout.text>;
 			})}
 		</Layout.mainSection>
 	);

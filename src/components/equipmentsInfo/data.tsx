@@ -35,12 +35,15 @@ export const equipments: Iequipments[] = [
 		basicInfo: [
 			'EMF Reader will always make a sound when the ghost does something, there are 5 possible readings:',
 			'EMF1: No reading.',
-			'EMF2: Ghost touched something, that can be a door, a doll, a lightswitch, a phone, a lamp and etc.',
-			'EMF3: Ghost threw something.',
-			'EMF4: Ghost made an event, that can be showing itself, airball, breaking lights and etc.',
-			'EMF5: That means evidence, if the ghost has EMF5 as an evidence any of the above types of EMFs has a 25% chance of being EMF5.',
+			'EMF2: The ghost touched something, this can be a door, doll, lightswitch, phone, lamp and etc.',
+			'EMF3: The ghost threw something.',
+			'EMF4: The ghost made an event, that can be showing itself, red light, airball, breaking light bubs and etc.',
+			'EMF5: That means evidence, if the ghost has EMF5 as evidence, any of the above types of EMFs has a 25% chance of showing EMF5 instead of the proper reading.',
 		],
-		tips: [''],
+		tips: [
+			'If you hear something being thrown run there and put that EMF Reader to work.',
+			'EMF is really useful for taking photos, while the EMF is beeping you can still take a picure of what the ghost interacted with.',
+		],
 		findEvidence: false,
 		test: false,
 	},
@@ -56,18 +59,25 @@ export const equipments: Iequipments[] = [
 	{
 		name: 'Ghost Writing Book',
 		basicInfo: [
-			'Writing Book is used to find Ghost Writing evidence, put it inside the ghost room and wait, note that this evidence along with D.O.T.S are the most boring and random evidence to find.',
+			'There is no trick here, just put the book inside the ghost room, sometimes it takes forever and sometimes the Ghost writes it pretty fast.',
 		],
 		tips: [
-			"For the book to work the ghost has to interact with it, so a tip is to get all the objects out of the ghost room, like shoes, plates, cups and etc. so there is a higher chance the ghost will interact with the book, since it won't have many other options.",
+			"For the book to work the ghost has to interact with it, so try getting all the objects out of the ghost room, like shoes, plates, cups and etc. there'll be a higher chance the ghost will interact with the book, since it won't have many other options.",
+			"If you see the ghost throwing the book you can be sure there won't be any Ghost Writing, notice that this probably don't work on nightmare or any difficulty that has less than 3 evidences.",
 		],
 		findEvidence: true,
 		test: false,
 	},
 	{
 		name: 'Spirit Box',
-		basicInfo: [''],
-		tips: [''],
+		basicInfo: [
+			`Spirit Box is really simple, just turn it on and ask questions to the Ghost in the Ghost Room you don't need to say the Ghost name, just ask the question, the best way is to ask questions fast so you get an answer quickly, I like asking "Where are you?", "Are you here?", "How old are you?" and "What do you want?".`,
+			"It's a commom misconception that Spirit Box drains sanity, that's not true.",
+		],
+		tips: [
+			"It's best to try for Spirit Box alone in the ghost room if you are playing on professional difficulty or above.",
+			'You can let the Spirit Box on on the ground and the Ghost may respond to it even if no on is around or asking questions.',
+		],
 		findEvidence: true,
 		test: true,
 	},

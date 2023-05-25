@@ -12,4 +12,14 @@ const mainSection = styled(Box)(({ theme }) => ({
 	},
 }));
 
-export { mainSection };
+const sectionTitles = styled(Typography)(({ theme }) => ({
+	paddingTop: '2rem',
+	paddingBottom: '1rem',
+}));
+
+const text = styled(Typography)(({ theme }) => ({
+	paddingBottom: '.5rem',
+	maxWidth: '70rem',
+}));
+
+export { mainSection, sectionTitles, text };

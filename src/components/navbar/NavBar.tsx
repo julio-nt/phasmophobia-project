@@ -219,9 +219,12 @@ export default function NavBar() {
 										All ghosts
 									</MenuItem>
 								</Link>
-								{ghostCard.map(ghost => {
+								{ghostCard.map((ghost, i) => {
 									return (
-										<Link href={`/ghosts/${ghost.name}`}>
+										<Link
+											href={`/ghosts/${ghost.name}`}
+											key={i}
+										>
 											<MenuItem onClick={handleClose}>
 												{ghost.name}
 											</MenuItem>
