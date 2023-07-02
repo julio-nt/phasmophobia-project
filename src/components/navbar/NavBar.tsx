@@ -131,6 +131,16 @@ export default function NavBar() {
 									display: { xs: 'block', md: 'none' },
 								}}
 							>
+								<Link href='/ghosts' key={uuidv4()}>
+										<MenuItem
+											key='ghosts'
+											onClick={handleCloseNavMenu}
+										>
+											<Typography textAlign='center'>
+												Ghosts
+											</Typography>
+										</MenuItem>
+									</Link>
 								{/* MENU DE TELA PEQUENA */}
 								{pages.map(page => (
 									<Link href={page.link} key={uuidv4()}>

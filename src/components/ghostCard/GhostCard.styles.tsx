@@ -54,6 +54,9 @@ const filterContainer = styled(Box)(({ theme }) => ({
 	display: 'flex',
 	flexWrap: 'wrap',
 	justifyContent: 'flex-end',
+	[theme.breakpoints.down(630)]: {
+		justifyContent: 'flex-start',
+	} 
 }));
 
 export {
