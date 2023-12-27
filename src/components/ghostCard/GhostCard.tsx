@@ -14,11 +14,11 @@ export default function GhostCard() {
     label: "Speed",
     options: [
       {
-        label: "Very Slow",
+        label: "Muito lento",
         value: "verySlow",
       },
       {
-        label: "Slow",
+        label: "Lento",
         value: "slow",
       },
       {
@@ -26,15 +26,15 @@ export default function GhostCard() {
         value: "normal",
       },
       {
-        label: "Fast",
+        label: "Rápido",
         value: "fast",
       },
       {
-        label: "Very Fast",
+        label: "Muito rápido",
         value: "veryFast",
       },
       {
-        label: "Varies",
+        label: "Varia",
         value: "varies",
       },
     ],
@@ -44,7 +44,7 @@ export default function GhostCard() {
     label: "Hunt",
     options: [
       {
-        label: "Early",
+        label: "Cedo",
         value: "early",
       },
       {
@@ -52,11 +52,11 @@ export default function GhostCard() {
         value: "normal",
       },
       {
-        label: "Late",
+        label: "Tarde",
         value: "late",
       },
       {
-        label: "Varies",
+        label: "Varia",
         value: "varies",
       },
     ],
@@ -94,7 +94,7 @@ export default function GhostCard() {
                       <CardActions>
                         <Link href={`/ghosts/${ghost.name}`} key={ghost.name}>
                           <Layout.cardButton size="small" variant="contained">
-                            Learn More
+                            Aprenda mais
                           </Layout.cardButton>
                         </Link>
                       </CardActions>
@@ -116,7 +116,7 @@ export default function GhostCard() {
                     <CardActions>
                       <Link href={`/ghosts/${ghost.name}`} key={ghost.name}>
                         <Layout.cardButton size="small" variant="contained">
-                          Learn More
+                          Aprenda mais
                         </Layout.cardButton>
                       </Link>
                     </CardActions>

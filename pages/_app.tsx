@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
             color: "#0055ff",
           }}
         >
-          26/12/2023
+          27/12/2023
         </span>
       </Typography>
     </>
