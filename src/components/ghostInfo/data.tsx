@@ -5,6 +5,11 @@ interface IghostInfo {
   behaviour: string[];
   strategies: string[];
   evidence: string[];
+  media?: {
+    title?: string;
+    embed?: string;
+    caption?: string;
+  }[];
 }
 
 const ghostInfo: IghostInfo[] = [
@@ -487,6 +492,13 @@ const ghostInfoBr: IghostInfo[] = [
       "Se o fantasma estiver interagindo com objetos muito frequentemente, pode-se suspeitar do Poltergeist.",
     ],
     evidence: ["Spirit Box", "Ultravioleta", "Escrita"],
+    media: [
+      {
+        title: "",
+        embed: "",
+        caption: "",
+      },
+    ],
   },
   {
     name: "Banshee",
@@ -509,6 +521,20 @@ const ghostInfoBr: IghostInfo[] = [
       "Outra forma de descobrir é, caso ache que teve um ataque muito cedo você pode checar o monitor de sanidade no caminhão, se a sanidade média estiver acima de 50%, mas de um jogador estiver abaixo, pode ser um Banshee e o alvo é o jogador com a sanidade abaixo de 50%. Também da para verificar isso se o ataque for muito demorado e tiver um jogador com a sanidade mais alta que a sanidade média.",
     ],
     evidence: ["Ultravioleta", "Orbe", "D.O.T.S"],
+    media: [
+      {
+        title: "Grito da Banshee",
+        embed: "https://www.youtube.com/embed/k29T-ztGX1Y",
+        caption:
+          "É possível escutar o grito da Banshee enquanto segura um Microfone Direcional em direção ao fantasma.",
+      },
+      {
+        title: "Banshee seguindo jogador",
+        embed: "https://www.youtube.com/embed/NqV3DT4NYaM?si=kKS_oTZ4DKebcaFD",
+        caption:
+          "Usando múltiplos sensores de movimento, é possível ver a Banshee caminhando em direção ao jogador.",
+      },
+    ],
   },
   {
     name: "Jinn",

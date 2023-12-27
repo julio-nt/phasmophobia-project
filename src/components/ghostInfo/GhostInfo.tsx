@@ -13,6 +13,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import TransferWithinAStationIcon from "@mui/icons-material/TransferWithinAStation";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import SpeedDialIcon from "@mui/material/SpeedDialIcon";
+import Image from "next/image";
 
 const actions = [
   { icon: <EmojiObjectsIcon />, name: "Strategies", id: "strategies" },
@@ -59,7 +60,7 @@ export default function GhostInfo(props: any) {
             {currentGhost?.behaviour.map((item, i) => {
               return (
                 <Layout.card elevation={3}>
-                  {item.includes("WARNING") ? (
+                  {item.includes("AVISO") ? (
                     <Layout.cardText>
                       <span style={{ fontWeight: "900" }}>{i + 1} -</span>
                       <b> {item}</b>
@@ -81,7 +82,7 @@ export default function GhostInfo(props: any) {
             {currentGhost?.strategies.map((item, i) => {
               return (
                 <Layout.card elevation={3}>
-                  {item.includes("WARNING") ? (
+                  {item.includes("AVISO") ? (
                     <Layout.cardText>
                       <span style={{ fontWeight: "900" }}>{i + 1} -</span>
                       <b> {item}</b>
@@ -96,6 +97,38 @@ export default function GhostInfo(props: any) {
               );
             })}
           </Layout.cardBox>
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-around",
+            }}
+          >
+            {currentGhost?.media?.map((item, i) => {
+              return (
+                <Box
+                  sx={{
+                    marginTop: "2rem",
+                    width: "40%",
+                  }}
+                >
+                  <Typography marginBottom={"1rem"} fontSize={"1.5rem"}>
+                    {item.title}
+                  </Typography>
+                  <iframe
+                    width="100%"
+                    height="350"
+                    src={item.embed}
+                    title={item.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
+                  <Typography>{item.caption}</Typography>
+                </Box>
+              );
+            })}
+          </Box>
         </Box>
       </Layout.mainSection>
       <Box
