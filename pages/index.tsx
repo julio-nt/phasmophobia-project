@@ -17,6 +17,7 @@ export default function HomePage() {
           paddingTop: "2rem",
           paddingLeft: "1rem",
           paddingRight: "1rem",
+          marginBottom: "5rem",
         }}
       >
         <Typography variant="h3">Bem-Vindo ao Phasmophobia Project</Typography>

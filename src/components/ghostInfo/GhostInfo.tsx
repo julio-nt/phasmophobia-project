@@ -109,7 +109,7 @@ export default function GhostInfo(props: any) {
                 <Box
                   sx={{
                     marginTop: "2rem",
-                    width: "40%",
+                    width: "45rem",
                   }}
                 >
                   <Typography marginBottom={"1rem"} fontSize={"1.5rem"}>

@@ -133,7 +133,7 @@ export default function NavBar() {
               >
                 <Link href="/ghosts" key={uuidv4()}>
                   <MenuItem key="ghosts" onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">Ghosts</Typography>
+                    <Typography textAlign="center">Fantasmas</Typography>
                   </MenuItem>
                 </Link>
                 {/* MENU DE TELA PEQUENA */}

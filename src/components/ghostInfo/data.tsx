@@ -532,7 +532,7 @@ const ghostInfoBr: IghostInfo[] = [
         title: "Banshee seguindo jogador",
         embed: "https://www.youtube.com/embed/NqV3DT4NYaM?si=kKS_oTZ4DKebcaFD",
         caption:
-          "Usando múltiplos sensores de movimento, é possível ver a Banshee caminhando em direção ao jogador.",
+          "Usando múltiplos sensores de movimento, é possível ver a Banshee caminhando em direção ao jogador, no vídeo acima o quarto do fantasma é o banheiro na entrada da casa de Tanglewood, porém ele vem até a cozinha onde eu (o alvo) estou várias vezes durante a partida.",
       },
     ],
   },
