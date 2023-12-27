@@ -199,7 +199,7 @@ export const equipmentsBr: Iequipments[] = [
   {
     name: "Câmera de Vídeo",
     basicInfo: [
-		'Câmera de Vídeo que vêm com a função de visão noturna que pode ser usada para encontrar a evidência de Orbe Fantasma dentro do local favorito do fantasma. É possível ver a Orbe Fantasma enquanto segura a câmera com a visão noturna ativada ou colocando a c^'
+      "Câmera de Vídeo que vêm com a função de visão noturna que pode ser usada para encontrar a evidência de Orbe Fantasma dentro do local favorito do fantasma. É possível ver a Orbe Fantasma enquanto segura a câmera com a visão noturna ativada ou colocando apoiada em algum local ou tripé.",
       "Simple video camera that has night vision, which can be use to find Ghost Orbs evidence in the ghost room, note that the only way to see ghost orbs is with the camera and with night vision on, you can see while holding the camera or looking at the monitor inside the truck.",
     ],
     tips: [
