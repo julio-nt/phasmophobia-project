@@ -237,7 +237,8 @@ const ghostCardBr: IGhostCard[] = [
   },
   {
     name: "Revenant",
-    shortInfo: "Esse fantasma é tranquilo... se ele não te ver.",
+    shortInfo:
+      "Extremamente rápido quando te vê e extremamente lento quando não vê.",
     evidence: ["Orbes - ", "Escrita - ", "Temperatura Baixa"],
     speed: "varies, verySlow, veryFast, All",
     hunt: "normal, All",
@@ -321,7 +322,7 @@ const ghostCardBr: IGhostCard[] = [
     name: "Raiju",
     shortInfo: "Muito rápido perto de equipamentos eletrônicos ligados.",
     evidence: ["EMF 5 - ", "Orbes - ", "D.O.T.S"],
-    speed: "varies, slow, veryFast, All",
+    speed: "varies, normal, veryFast, All",
     hunt: "early, normal, All",
   },
   {
@@ -354,7 +355,7 @@ const ghostCardBr: IGhostCard[] = [
   },
   {
     name: "Deogen",
-    shortInfo: "É impossível se esconder dele.",
+    shortInfo: "É impossível se esconder dele,  mas é muito fácil fugir.",
     evidence: ["*Spirit Box - ", "Escrita - ", "D.O.T.S"],
     speed: "varies, veryFast, verySlow, All",
     hunt: "late, All",

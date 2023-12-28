@@ -486,17 +486,24 @@ const ghostInfoBr: IghostInfo[] = [
     ],
     strategies: [
       "Polter Bomb: O teste mais conhecido do Poltergeist é preparar uma PolterBomb, isso é, monte uma pilha de objetos dentro do local favorito do fantasma, não precisa exagerar, 5 objetos já é o suficiente. Após isso só resta esperar, se o fantasma jogar todos os objetos pra tudo que é lado significa que você está lidando com um Poltergeist. Na dúvida você pode usar um EMF nível 3 para verificar se mais de um objeto foi realmente jogado.",
-      "Polter Furacão: Se você sabe loopar o fantasma tente esse teste para descobrir o Poltergeist mais rápido. Coloque vários objetos em volta de algum local que você pode loopar o fantasma, como o balcão da cozinha de Tanglewood por exemplo. Aguarde o ataque e fique andando em circulos com o fantasma em volta dos objetos, se você perceber o fantasma jogando os objetos sem parar, pode-se dizer que é um Poltergeist.",
-      "Polter Linha: Para mim esse é o melhor teste do Poltergeist, por ser o mais rápido que o PolterBomb e mais perceptível que o Polter Furacão. Coloque vários objetos enfileirados no chão em um local que você pode observar o fantasma vindo, como o corredor em frente ao sofá ou a garagem de Tanglewood. Deixe os itens enfileirados o caminho todo e aguarde um ataque, quando o fantasma estiver vindo preste atenção se ele vai jogar os itens sem parar (a cada meio segundo), lembre-se que todo fantasma pode jogar itens a cada 0.5 segundos, porém o Poltergeist é garantido 100% que nunca deixará de jogar enquanto tiver objetos por perto.",
+      "Círculo de objetos: Se você sabe loopar o fantasma tente esse teste para descobrir o Poltergeist mais rápido. Coloque vários objetos em volta de algum local que você pode loopar o fantasma, como o balcão da cozinha de Tanglewood por exemplo. Aguarde o ataque e fique andando em circulos com o fantasma em volta dos objetos, se você perceber o fantasma jogando os objetos sem parar, pode-se dizer que é um Poltergeist.",
+      "Linha de objetos no chão: Para mim esse é o melhor teste do Poltergeist, por ser o mais rápido que o PolterBomb e mais perceptível que o Polter Furacão. Coloque vários objetos enfileirados no chão em um local que você pode observar o fantasma vindo, como o corredor em frente ao sofá ou a garagem de Tanglewood. Deixe os itens enfileirados o caminho todo e aguarde um ataque, quando o fantasma estiver vindo preste atenção se ele vai jogar os itens sem parar (a cada meio segundo), lembre-se que todo fantasma pode jogar itens a cada 0.5 segundos, porém o Poltergeist é garantido 100% que nunca deixará de jogar enquanto tiver objetos por perto.",
       "Se você notar objetos sendo jogados muito longe, pode-se suspeitar do Poltergeist.",
       "Se o fantasma estiver interagindo com objetos muito frequentemente, pode-se suspeitar do Poltergeist.",
     ],
     evidence: ["Spirit Box", "Ultravioleta", "Escrita"],
     media: [
       {
-        title: "",
-        embed: "",
-        caption: "",
+        title: "Polgergeist jogando objetos enfileirados no chão",
+        embed: "https://www.youtube.com/embed/pYpb1JO0wSM?si=v2w7q88iKur6_GkC",
+        caption:
+          "Fazendo uma linha de objetos no chão, e chamando o fantasma em minha direção para observar como ele está jogando os objetos.",
+      },
+      {
+        title: "Polter Furacão",
+        embed: "https://www.youtube.com/embed/wQqbMRtyYcA?si=S_X6DaRG6E_FP3RQ",
+        caption:
+          "Colocando vários objetos em volta de um local que eu posso loopar (fazer o fantasma andar em circulos) para observar a forma que o fantasma joga os objetos.",
       },
     ],
   },
@@ -635,6 +642,14 @@ const ghostInfoBr: IghostInfo[] = [
       "O Yurei é um dos fantasmas mais chatos de descobrir sem ser por evidência, pois a habilidade que distingue ele de outros fantasmas é uma chance muito aleatória de conseguir ver, pois o Yurei vai bater uma porta com força. Sabe quando o fantasma toca em uma porta? Ela mexe devagarinho abrindo ou fechando, quando o Yurei usa a habilidade dele, a porta vai mover bem rápido e vai fechar completamente, além disso, é possível escutar a porta sendo tocada duas vezes, ao invés de uma.",
     ],
     evidence: ["Orbe", "Temperatura Baixa", "D.O.T.S"],
+    media: [
+      {
+        title: "Dois toques na porta",
+        embed: "https://www.youtube.com/embed/H0Dkr67KtCk?si=j2rgKqO9yWQ5bd4u",
+        caption:
+          "O Yurei tem a habilidade de fechar uma porta completamente, ao invés de movê-la lentamente como os outros fantasma. Quando ele usa essa habilidade é possível escutar o som de toque na porta duas vezes ao mesmo tempo, se usar o EMF Tier 3 verá que ele detectará duas vezes o EMF na porta.",
+      },
+    ],
   },
   {
     name: "Oni",

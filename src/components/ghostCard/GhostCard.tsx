@@ -11,7 +11,7 @@ export default function GhostCard() {
 
   const speedData = {
     id: "speed",
-    label: "Speed",
+    label: "Velocidade",
     options: [
       {
         label: "Muito lento",
@@ -41,7 +41,7 @@ export default function GhostCard() {
   };
   const huntData = {
     id: "hunt",
-    label: "Hunt",
+    label: "Ataque",
     options: [
       {
         label: "Cedo",
@@ -52,7 +52,7 @@ export default function GhostCard() {
         value: "normal",
       },
       {
-        label: "Tarde",
+        label: "Demorado",
         value: "late",
       },
       {
