@@ -64,6 +64,16 @@ export const ghostInfoBr: IghostInfo[] = [
         caption:
           "Phantom nunca irá aparecer em uma foto (a não ser que bug), quando ele estiver fazendo Evento Fantasma ou passando no D.O.T.S, tente tirar uma foto dele.",
       },
+      {
+        title: "Phantom desaparecendo quando tira foto no D.O.T.S",
+        embed: "https://www.youtube.com/embed/TPjKpB5jA3s",
+      },
+      {
+        title: "Loopando o Phantom durante o ataque",
+        embed: "https://www.youtube.com/embed/zG3--hvvUkk",
+        caption:
+          "Phantom fica mais tempo invisível que outros fantasmas durante ataques.",
+      },
     ],
   },
   {

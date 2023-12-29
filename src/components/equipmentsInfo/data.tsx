@@ -4,13 +4,11 @@ export interface Iequipments {
   tips: string[];
   findEvidence: boolean;
   test: boolean;
-  media?: [
-    {
-      title: string;
-      media: string;
-      caption?: string;
-    }
-  ];
+  media?: {
+    title: string;
+    media: string;
+    caption?: string;
+  }[];
 }
 
 export const equipments: Iequipments[] = [
@@ -28,8 +26,14 @@ export const equipments: Iequipments[] = [
     test: false,
     media: [
       {
-        title: "Encontrando Orbe",
-        media: "",
+        title: "Encontrando Orbe Fantasma",
+        media: "https://www.youtube.com/embed/pcEA5KPntxk",
+      },
+      {
+        title: "Quebrando a porta para ver Orbe melhor",
+        media: "https://www.youtube.com/embed/JvKMHNokUgY",
+        caption:
+          "É possível utilizar a técnica de quebrar a porta para ficar mais fácil de encontrar Orbe Fantasma e D.O.T.S.",
       },
     ],
   },
