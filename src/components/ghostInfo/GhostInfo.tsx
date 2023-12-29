@@ -5,7 +5,7 @@ import {
   SpeedDial,
   SpeedDialAction,
 } from "@mui/material";
-import { ghostInfo, ghostInfoBr } from "./data";
+import { ghostInfoBr } from "./data";
 import * as Layout from "./GhostInfo.styles";
 import { useState } from "react";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
@@ -139,6 +139,7 @@ export default function GhostInfo(props: any) {
           position: "fixed",
           bottom: 16,
           right: 10,
+          // opacity: 0.5,
         }}
       >
         <Backdrop open={open} />
@@ -155,6 +156,7 @@ export default function GhostInfo(props: any) {
           open={open}
           FabProps={{
             sx: {
+              opacity: 0.6,
               bgcolor: "red",
               "&:hover": {
                 bgcolor: "red",

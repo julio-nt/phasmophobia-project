@@ -1,37 +1,16 @@
-export interface Iequipments {
-  name: string;
-  basicInfo: string[];
-  tips: string[];
-  findEvidence: boolean;
-  test: boolean;
-  media?: [
-    {
-      title: string;
-      media: string;
-      caption?: string;
-    }
-  ];
-}
+import { Iequipments } from "./data";
 
 export const equipments: Iequipments[] = [
   {
-    name: "Câmera de Vídeo",
+    name: "Video Camera",
     basicInfo: [
-      "A câmera de vídeo pode ser usada para achar Orbes Fantasma quando a visão noturna está ativada.",
-      "Orbe Fantasma é uma bolinha branca que fica flutuando e só é possível vê-la dentro do quarto favorito do fantasma",
-      "Elas podem sumir por um tempo e aparecer de novo depois.",
+      "Simple video camera that has night vision, which can be use to find Ghost Orbs evidence in the ghost room, note that the only way to see ghost orbs is with the camera and with night vision on, you can see while holding the camera or looking at the monitor inside the truck.",
     ],
     tips: [
-      "A melhor forma de achar Orbe Fantasma é segurando a câmera com a visão noturna ativada e andando pelo quarto olhando cada canto por alguns segundos. Se mesmo assim não achar nenhuma Orbe é bom deixar a câmera em um local que ela consiga ver boa parte do quarto para que você cheque depois pelo caminhão.",
+      "The best way to find ghost orbs is by holding the camera and having a look around the ghost room, check every corner.",
     ],
     findEvidence: true,
     test: false,
-    media: [
-      {
-        title: "Encontrando Orbe",
-        media: "",
-      },
-    ],
   },
   {
     name: "D.O.T.S Projector",
