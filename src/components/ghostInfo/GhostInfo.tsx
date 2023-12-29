@@ -16,10 +16,10 @@ import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 import Image from "next/image";
 
 const actions = [
-  { icon: <EmojiObjectsIcon />, name: "Strategies", id: "strategies" },
-  { icon: <RemoveRedEyeIcon />, name: "Behaviour", id: "behaviour" },
-  { icon: <TransferWithinAStationIcon />, name: "Speed", id: "speed" },
-  { icon: <PriorityHighIcon />, name: "Hunt", id: "hunt" },
+  { icon: <EmojiObjectsIcon />, name: "Estratégias", id: "strategies" },
+  { icon: <RemoveRedEyeIcon />, name: "Comportamento", id: "behaviour" },
+  { icon: <TransferWithinAStationIcon />, name: "Velocidade", id: "speed" },
+  { icon: <PriorityHighIcon />, name: "Ataque", id: "hunt" },
 ];
 
 export default function GhostInfo(props: any) {
