@@ -1,6 +1,8 @@
 import { Box, Typography, Button } from "@mui/material";
 import Head from "next/head";
 
+import favicon from "../public/light/favicon.ico";
+
 export default function HomePage() {
   return (
     <>
@@ -10,6 +12,7 @@ export default function HomePage() {
           name="description"
           content="You will become a pro in the game Phasmophobia"
         />
+        <link rel="icon" href={favicon.src} sizes="any" type="image/x-icon" />
       </Head>
       <Box
         sx={{
