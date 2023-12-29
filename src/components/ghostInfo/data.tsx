@@ -505,6 +505,11 @@ const ghostInfoBr: IghostInfo[] = [
         caption:
           "Colocando vários objetos em volta de um local que eu posso loopar (fazer o fantasma andar em circulos) para observar a forma que o fantasma joga os objetos.",
       },
+      {
+        title: "Lançando vários objetos ao mesmo tempo.",
+        embed: "https://www.youtube.com/embed/QD8FUyvMNdk",
+        caption: "",
+      },
     ],
   },
   {
@@ -579,6 +584,14 @@ const ghostInfoBr: IghostInfo[] = [
       "Ligue a luz do quarto do fantasma e coloque um crucifixo nele, se o fantasma queimar iniciar um ataque dentro do quarto com a luz acesa, é um sinal que não é Mare, mas para garantir faça esse teste mais de uma vez, Mare pode atacar em quartos com luzes acesas, porém é mais provável que ela vague para outro quarto antes de tentar atacar.",
     ],
     evidence: ["Spirit Box", "Orbe", "Escrita"],
+    media: [
+      {
+        title: "Mare desligando a luz",
+        embed: "https://www.youtube.com/embed/mUPc0lakaQQ",
+        caption:
+          "A Mare tem uma chance de desligar o interriptor quase que imediatamente após um jogador ligar.",
+      },
+    ],
   },
   {
     name: "Revenant",
