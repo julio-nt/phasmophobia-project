@@ -19,6 +19,9 @@ export default function EquipmentsInfo(props: any) {
       {currentEquip?.tips.map((item, i) => {
         return <Layout.text>{item}</Layout.text>;
       })}
+      <Layout.sectionTitles variant="h5">
+        <b>Melhor nível de equipamento:</b> {currentEquip?.tier}
+      </Layout.sectionTitles>
       <Box
         sx={{
           display: "flex",
@@ -34,7 +37,11 @@ export default function EquipmentsInfo(props: any) {
                 width: "45rem",
               }}
             >
-              <Typography marginBottom={"1rem"} fontSize={"1.5rem"}>
+              <Typography
+                variant="h3"
+                marginBottom={"1rem"}
+                fontSize={"1.5rem"}
+              >
                 {item.title}
               </Typography>
               <iframe

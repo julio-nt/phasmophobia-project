@@ -1,28 +1,35 @@
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html,
 body {
-	max-width: 100vw;
-	overflow-x: hidden;
-	min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
-	background: linear-gradient(#000000, #140000);
-	background-repeat: no-repeat;
+  background: linear-gradient(#000000, #140000);
+  background-repeat: no-repeat;
+  color: rgb(201, 201, 201);
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
+  html {
+    color-scheme: dark;
+  }
+}
+
+p,
+h3,
+h5 {
+  color: rgb(201, 201, 201);
 }

@@ -1,15 +1,8 @@
-export interface Iequipments {
-  name: string;
-  primary: boolean;
-  secondary: boolean;
-  findGhost: boolean;
-  findEvidence: boolean;
-  test: boolean;
-}
+import { Iequipments } from "./data";
 
-export const equipmentsBr: Iequipments[] = [
+export const equipments: Iequipments[] = [
   {
-    name: "Câmera de Vídeo",
+    name: "Video Camera",
     primary: true,
     secondary: false,
     findGhost: false,
@@ -17,7 +10,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Projetor D.O.T.S",
+    name: "D.O.T.S Projector",
     primary: true,
     secondary: false,
     findGhost: false,
@@ -25,15 +18,15 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Leitor de EMF",
+    name: "EMF Reader",
     primary: true,
     secondary: false,
     findGhost: true,
-    findEvidence: true,
+    findEvidence: false,
     test: false,
   },
   {
-    name: "Lanterna",
+    name: "Flashlight",
     primary: true,
     secondary: false,
     findGhost: false,
@@ -41,7 +34,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Livro de Escrita Fantasma",
+    name: "Ghost Writing Book",
     primary: true,
     secondary: false,
     findGhost: false,
@@ -57,7 +50,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Ultravioleta",
+    name: "UV Light",
     primary: true,
     secondary: false,
     findGhost: false,
@@ -65,7 +58,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Câmera de Foto",
+    name: "Photo Camera",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -73,7 +66,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Vela",
+    name: "Candle",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -81,7 +74,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Crucifixo",
+    name: "Crucifix",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -89,7 +82,15 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Câmera de Cabeça",
+    name: "Glowstick",
+    primary: false,
+    secondary: true,
+    findGhost: false,
+    findEvidence: true,
+    test: true,
+  },
+  {
+    name: "Head Mounted Camera",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -97,7 +98,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Isqueiro",
+    name: "Lighter",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -105,7 +106,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Sensor de Movimento",
+    name: "Motion Sensor",
     primary: false,
     secondary: true,
     findGhost: true,
@@ -113,7 +114,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Microfone Direcional",
+    name: "Parabolic Microphone",
     primary: false,
     secondary: true,
     findGhost: true,
@@ -121,7 +122,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Sal",
+    name: "Salt",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -129,7 +130,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Remédio de Sanidade",
+    name: "Sanity Pills",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -137,7 +138,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Incenso",
+    name: "Smudge Sticks",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -145,7 +146,7 @@ export const equipmentsBr: Iequipments[] = [
     test: true,
   },
   {
-    name: "Sensor de Som",
+    name: "Sound Sensor",
     primary: false,
     secondary: true,
     findGhost: true,
@@ -153,7 +154,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Lanterna Forte",
+    name: "Strong Flashlight",
     primary: false,
     secondary: true,
     findGhost: false,
@@ -161,7 +162,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Termômetro",
+    name: "Thermometer",
     primary: false,
     secondary: true,
     findGhost: true,
@@ -169,7 +170,7 @@ export const equipmentsBr: Iequipments[] = [
     test: false,
   },
   {
-    name: "Tripé",
+    name: "Tripod",
     primary: false,
     secondary: true,
     findGhost: false,

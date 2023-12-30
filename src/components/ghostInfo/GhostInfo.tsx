@@ -112,7 +112,11 @@ export default function GhostInfo(props: any) {
                     width: "45rem",
                   }}
                 >
-                  <Typography marginBottom={"1rem"} fontSize={"1.5rem"}>
+                  <Typography
+                    variant="h3"
+                    marginBottom={"1rem"}
+                    fontSize={"1.5rem"}
+                  >
                     {item.title}
                   </Typography>
                   <iframe
